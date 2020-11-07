@@ -15,6 +15,9 @@ body{
     text-align: center;
 }
 
+body.dark__theme{
+    background: black;
+}
 .clock{
     position: relative;
     display: flex;

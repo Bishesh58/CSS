@@ -11,3 +11,8 @@ setInterval(()=>{
     min.style.transform =`rotateZ(${mins}deg)`;
     hr.style.transform =`rotateZ(${hrs+(mins/12)}deg)`;
 })
+
+let btn = document.querySelector('.btn__toggle');
+btn.addEventListener('click', ()=>{
+    document.body.classList.toggle('dark__theme');
+})
