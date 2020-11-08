@@ -15,4 +15,5 @@ setInterval(()=>{
 let btn = document.querySelector('.btn__toggle');
 btn.addEventListener('click', ()=>{
     document.body.classList.toggle('dark__theme');
+    document.querySelector('.clock').classList.toggle('dark__theme');
 })
