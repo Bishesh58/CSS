@@ -1,0 +1,108 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+section{
+    height: 100vh;
+    background-color: #000;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #f00,#f00, #0f0,#00f,#ff0,#0ff);
+    pointer-events: none;
+    mix-blend-mode: color;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    color: #ddd;
+    text-align: center;
+    font-size: 5em;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+}
+
+video{
+    width: 100%;
+    object-fit:cover;
+}
+
+h1 span{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0);
+        filter: blur(0);
+    }
+}
+
+h1 span:nth-child(1){
+    animation-delay: 1s;
+    color: red;
+}
+h1 span:nth-child(2){
+    animation-delay: 1.3s;
+    color: red;
+}
+h1 span:nth-child(3){
+    animation-delay: 1.5s;
+    color: #ff0000;
+}
+h1 span:nth-child(4){
+    animation-delay: 1.7s;
+    color: #9c6300;
+}
+h1 span:nth-child(5){
+    animation-delay: 2s;
+    color: #2ad500;
+}
+h1 span:nth-child(6){
+    animation-delay: 2.3s;
+    color: #00cc33;
+}
+h1 span:nth-child(7){
+    animation-delay: 2.5s;
+    color: #006996;
+}
+h1 span:nth-child(8){
+    animation-delay: 2.7s;
+    color: #0101fe;
+}
+h1 span:nth-child(9){
+    animation-delay: 3s;
+    color: #6c6c93;
+}
+h1 span:nth-child(10){
+    animation-delay: 3.3s;
+    color: #d5d52a;
+}
+h1 span:nth-child(11){
+    animation-delay: 3.5s;
+    color: #beff42;
+}
+h1 span:nth-child(12){
+    animation-delay: 3.7s;
+    color: #5dffa2;
+}
