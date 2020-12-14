@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.dark__theme{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 80vh;
+}
+
+.background{
+    height: 40px;
+    width: 80px;
+    background-color: black;
+    position: relative;
+    border-radius: 20px;
+}
+
+.background::after{
+    content: '';
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+}
+
+#theme__switch{
+   opacity: 0;
+}
+
+#theme__switch:checked + .background {
+    background-color: grey;
+
+}
+
+#theme__switch:checked +  .background::after{
+    transform: translateX(40px);
+
+}
