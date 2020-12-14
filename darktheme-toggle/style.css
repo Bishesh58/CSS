@@ -16,8 +16,15 @@ body{
     background-color: black;
     position: relative;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.background i {
+    color: yellow;
+   
+}
 .background::after{
     content: '';
     height: 30px;
